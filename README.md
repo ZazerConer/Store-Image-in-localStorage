@@ -153,6 +153,9 @@ _Responsive device_
 &nbsp;
 <a href="">
 <img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
+&nbsp;
+<a href="">
+<img width="55px" height="30px" src="https://img.shields.io/badge/Image-blueviolet"></a>
 </div>
 
 <hr>
@@ -194,6 +197,9 @@ _Responsive device_
 &nbsp;
 <a href="">
 <img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
+&nbsp;
+<a href="">
+<img width="55px" height="30px" src="https://img.shields.io/badge/Image-blueviolet"></a>
 </div>
 
 <hr>
