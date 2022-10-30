@@ -6,7 +6,9 @@
 
 - **LocalStorage**
 
-Same way as before, **[User Profile](https://github.com/ZazerConer/User-Profile-with-Signup-Login)** and **[User Permission](https://github.com/ZazerConer/User-Profile-with-Signup-Login/tree/main/User-Permission)**.
+Store any data, such as IDs, text, image data, passwords etc.
+
+**See the [Tools](https://github.com/ZazerConer/Show-Data-From-localStorage)**
 
 <br>
 
@@ -50,9 +52,31 @@ Example :
 
 Its **_value_** is `img1` <-- "**ID**"
 
-For the full source code you can see and click the code below.
+<br>
+
+### Store the image ID
+
+```javascript
+
+```
+
+### Get ID and display the image
+
+```javascript
+
+```
 
 <br>
+
+<div align="center">
+<a href="">
+<img width="65px" height="35px" src="https://img.shields.io/badge/DEMO-slateblue"></a>
+</div>
+
+<br>
+
+For the full source code you can see and click the code below.
+
 <hr>
 
 ## User Avatar
