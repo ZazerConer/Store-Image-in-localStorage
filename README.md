@@ -54,26 +54,25 @@ Its **_value_** is `img1` <-- "**ID**"
 
 <br>
 
-### Store the ID in localStorage
+### Store the ID on localStorage
 
-**_Use the form to store the ID from the input "value."._**
+**_Use the Form to store the ID from the input "value"._**
 
 `store()`
 
 ```html
-HTML
+<!--HTML-->
 
 <form method="get" onsubmit="return store(this);">
-<img class="showImg" src="image/img1.jpg"><br>
-<input class="inputID" type="id" id="img1" value="img1">
-<input class="button" type="submit" value="Save">
+  <input type="id" id="image1" value="img1">
+  <input type="submit" value="Save">
 </form>
 ```
 
 `setItem()`
 
 ```javascript
-JavaScript
+// JavaScript.
 
 function store(imageID) {
   var id = imageID["image1"];
@@ -84,17 +83,22 @@ function store(imageID) {
 
 ### Get and display images from ID
 
-```html
-HMTL
+`src=""`
 
+```html
+<!--HMTL-->
+
+<!-- Display the image -->
 <img id="showImg" src="">
 ```
 
+`getItem()`
+
 ```javascript
-JavaScript
+// JavaScript.
 
 const image1 = localStorage.getItem('img1');
-  if (img1) {
+  if (img1) { // ID img1.
   document.getElementById("showImg").src = "image/img1.jpg";
 }
 ```
