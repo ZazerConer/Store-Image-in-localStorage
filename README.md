@@ -2,9 +2,32 @@
 
 <br>
 
+## Background Cover
 
-**Store the Image in localStorage using the ID and get the stored ID, display the image on the next page.**
+### Preview
 
-## Source Code
+<img src="">
 
-<img width="50px" height="25px" src="https://img.shields.io/badge/HTML-orangered">
+### Source Code
+
+<img width="60px" height="35px" src="https://img.shields.io/badge/HTML-orangered">
+
+<img width="60px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue">
+
+<img width="75px" height="35px" src="https://img.shields.io/badge/JavaScript-gold">
+
+<hr>
+
+## User Avatar
+
+### Preview
+
+<img src="">
+
+### Source Code
+
+<img width="60px" height="35px" src="https://img.shields.io/badge/HTML-orangered">
+
+<img width="60px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue">
+
+<img width="75px" height="35px" src="https://img.shields.io/badge/JavaScript-gold">
