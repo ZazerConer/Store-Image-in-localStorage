@@ -120,7 +120,25 @@ For the full source code you can see and click the button below.
 
 ### Preview
 
+<details>
+<summary><strong>Screenshot</strong></summary>
+
+_Responsive device_
+
+<br>
+
+**Desktop**
 <img src="">
+
+**Tablet**
+<img src="">
+
+**Mobile**
+<img src="">
+
+</details>
+
+<br>
 
 ### Source Code
 
@@ -143,7 +161,25 @@ For the full source code you can see and click the button below.
 
 ### Preview
 
+<details>
+<summary><strong>Screenshot</strong></summary>
+
+_Responsive device_
+
+<br>
+
+**Desktop**
 <img src="">
+
+**Tablet**
+<img src="">
+
+**Mobile**
+<img src="">
+
+</details>
+
+<br>
 
 ### Source Code
 
@@ -166,7 +202,25 @@ For the full source code you can see and click the button below.
 
 ### Preview
 
+<details>
+<summary><strong>Screenshot</strong></summary>
+
+_Responsive device_
+
+<br>
+
+**Desktop**
 <img src="">
+
+**Tablet**
+<img src="">
+
+**Mobile**
+<img src="">
+
+</details>
+
+<br>
 
 ### Source Code
 
