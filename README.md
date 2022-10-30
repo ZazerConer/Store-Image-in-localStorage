@@ -1,4 +1,4 @@
-<h1 align="center">Store Image in localStorage<h1>
+<h1 align="center">Store Image in localStorage</h1>
 
 <br>
 
@@ -10,11 +10,18 @@
 
 ### Source Code
 
-<img width="60px" height="35px" src="https://img.shields.io/badge/HTML-orangered">
+<br>
 
-<img width="60px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue">
-
-<img width="75px" height="35px" src="https://img.shields.io/badge/JavaScript-gold">
+<div align="center">
+<a href="">
+<img width="65px" height="35px" src="https://img.shields.io/badge/HTML-orangered"></a>
+&nbsp;
+<a href="">
+<img width="65px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
+&nbsp;
+<a href="">
+<img width="78px" height="35px" src="https://img.shields.io/badge/JavaScript-gold"></a>
+</div>
 
 <hr>
 
@@ -26,8 +33,47 @@
 
 ### Source Code
 
-<img width="60px" height="35px" src="https://img.shields.io/badge/HTML-orangered">
+<br>
 
-<img width="60px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue">
+<div align="center">
+<a href="">
+<img width="65px" height="35px" src="https://img.shields.io/badge/HTML-orangered"></a>
+&nbsp;
+<a href="">
+<img width="65px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
+&nbsp;
+<a href="">
+<img width="78px" height="35px" src="https://img.shields.io/badge/JavaScript-gold"></a>
+</div>
 
-<img width="75px" height="35px" src="https://img.shields.io/badge/JavaScript-gold">
+<hr>
+
+## Next Page
+
+### Preview
+
+<img src="">
+
+### Source Code
+
+<br>
+
+<div align="center">
+<a href="">
+<img width="65px" height="35px" src="https://img.shields.io/badge/HTML-orangered"></a>
+&nbsp;
+<a href="">
+<img width="65px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
+&nbsp;
+<a href="">
+<img width="78px" height="35px" src="https://img.shields.io/badge/JavaScript-gold"></a>
+</div>
+
+
+
+
+
+
+
+
+
