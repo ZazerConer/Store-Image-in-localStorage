@@ -116,7 +116,7 @@ For the full source code you can see and click the button below.
 
 <hr>
 
-# User Avatar
+<h1 align="center">User Avatar</h1>
 
 ## Preview
 
@@ -128,13 +128,13 @@ _Responsive device_
 <br>
 
 **Desktop**
-<img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/avatar-desktop_dZIshlDhZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149015529" alt="zz-avatar-desktop">
+<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/avatar-desktop_dZIshlDhZ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149015529" alt="zz-avatar-desktop" width="500px"></div>
 
 **Tablet**
 <div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/avatar-tablet_wTtV3hP0c.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149022128" alt="zz-avatar-tablet" width="320px" height="479px"></div>
 
 **Mobile**
-<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/avatar-mobile_lEwhwSCZE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149018698" alt="zz-avatar-mobile" width="280px" height="479px"></div>
+<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/avatar-mobile_lEwhwSCZE.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149018698" alt="zz-avatar-mobile" width="280px" height="485px"></div>
 
 </details>
 
@@ -161,7 +161,7 @@ _Responsive device_
 <br>
 <hr>
 
-# Background Cover
+<h1 align="center">Background Cover</h1>
 
 ## Preview
 
@@ -173,13 +173,13 @@ _Responsive device_
 <br>
 
 **Desktop**
-<img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/background-desktop_zXUJ4jmJ-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149020397" alt="zz-background-desktop">
+<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/background-desktop_zXUJ4jmJ-.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149020397" alt="zz-background-desktop" width="500px"></div>
 
 **Tablet**
 <div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/background-tablet_pV3G_HvZ6.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149026444" alt="zz-background-tablet" width="320px" height="479px"></div>
 
 **Mobile**
-<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/background-mobile_R1-6yH-PB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149024010" alt="zz-background-mobile" width="280px" height="479px"></div>
+<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/background-mobile_R1-6yH-PB.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149024010" alt="zz-background-mobile" width="280px" height="485px"></div>
 
 </details>
 
@@ -206,7 +206,7 @@ _Responsive device_
 <br>
 <hr>
 
-# Next Page
+<h1 align="center">Next Page</h1>
 
 ## Preview
 
@@ -218,13 +218,13 @@ _Responsive device_
 <br>
 
 **Desktop**
-<img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/page-desktop_F4Rq9RCnM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149014690" alt="zz-page-desktop">
+<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/page-desktop_F4Rq9RCnM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149014690" alt="zz-page-desktop" width="500px"></div>
 
 **Tablet**
 <div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/page-tablet_PZTOYSW9R.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149015536" alt="zz-page-tablet" width="320px" height="479px"></div>
 
 **Mobile**
-<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/page-mobile_AOGBimQuj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149015456" alt="zz-page-mobile" width="280px" height="479px"></div>
+<div align="center"><img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/page-mobile_AOGBimQuj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667149015456" alt="zz-page-mobile" width="280px" height="485px"></div>
 
 </details>
 
@@ -245,6 +245,7 @@ _Responsive device_
 <img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
 </div>
 
+<br>
 <hr>
 <br>
 
