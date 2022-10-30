@@ -8,7 +8,7 @@
 
 Store any data, such as IDs, text, image data, passwords etc.
 
-**See the [Tools](https://github.com/ZazerConer/Show-Data-From-localStorage)**
+**See this tools [Show Data From localStorage](https://github.com/ZazerConer/Show-Data-From-localStorage)**
 
 <br>
 
@@ -97,22 +97,22 @@ function store(imageID) {
 ```javascript
 // JavaScript.
 
-const image1 = localStorage.getItem('img1');
+const img1 = localStorage.getItem('img1');
   if (img1) { // ID img1.
-  document.getElementById("showImg").src = "image/img1.jpg";
+  document.getElementById("showImg").src = "image/image1.jpg";
 }
 ```
 
-<br>
+<br><br>
 
 <div align="center">
 <a href="">
-<img width="65px" height="35px" src="https://img.shields.io/badge/DEMO-slateblue"></a>
+<img width="80px" height="35px" src="https://img.shields.io/badge/DEMO-slateblue"></a>
 </div>
 
-<br>
+<br><br>
 
-For the full source code you can see and click the code below.
+For the full source code you can see and click the button below.
 
 <hr>
 
@@ -128,13 +128,13 @@ For the full source code you can see and click the code below.
 
 <div align="center">
 <a href="">
-<img width="65px" height="35px" src="https://img.shields.io/badge/HTML-orangered"></a>
+<img width="55px" height="30px" src="https://img.shields.io/badge/HTML-orangered"></a>
 &nbsp;
 <a href="">
-<img width="65px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
+<img width="55px" height="30px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
 &nbsp;
 <a href="">
-<img width="78px" height="35px" src="https://img.shields.io/badge/JavaScript-gold"></a>
+<img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
 </div>
 
 <hr>
@@ -151,13 +151,13 @@ For the full source code you can see and click the code below.
 
 <div align="center">
 <a href="">
-<img width="65px" height="35px" src="https://img.shields.io/badge/HTML-orangered"></a>
+<img width="55px" height="30px" src="https://img.shields.io/badge/HTML-orangered"></a>
 &nbsp;
 <a href="">
-<img width="65px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
+<img width="55px" height="30px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
 &nbsp;
 <a href="">
-<img width="78px" height="35px" src="https://img.shields.io/badge/JavaScript-gold"></a>
+<img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
 </div>
 
 <hr>
@@ -174,13 +174,13 @@ For the full source code you can see and click the code below.
 
 <div align="center">
 <a href="">
-<img width="65px" height="35px" src="https://img.shields.io/badge/HTML-orangered"></a>
+<img width="55px" height="30px" src="https://img.shields.io/badge/HTML-orangered"></a>
 &nbsp;
 <a href="">
-<img width="65px" height="35px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
+<img width="55px" height="30px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
 &nbsp;
 <a href="">
-<img width="78px" height="35px" src="https://img.shields.io/badge/JavaScript-gold"></a>
+<img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
 </div>
 
 <hr>
