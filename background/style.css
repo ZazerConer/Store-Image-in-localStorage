@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #ECEFF1;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/* Background cover */
+.baImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Background cover selector */
+.coSelector {
+    max-width: 1024px;
+    height: auto;
+    padding: 20px 5px;
+    margin: auto;
+    display: block;
+    z-index: 1;
+}
+
+form {
+    display: inline-block;
+    padding: 7px 5px 3px 5px;
+    border-radius: 5px;
+}
+
+/* Background image */
+.cover {
+    width: 280px;
+    height: 160px;
+    margin: 5px;
+    border-radius: 10px;
+    background: slateblue;
+    -moz-box-shadow: 0 0 0 2px slateblue;
+    -webkit-box-shadow: 0 0 0 2px slateblue;
+    box-shadow: 0 0 0 2px slateblue;
+}
+
+.cover:hover {
+    opacity: 0.8;
+    border: 2px ridge slateblue;
+}
+
+.inputID {
+    display: none !important;
+}
+
+/* Save image (Background) */
+.button {
+    margin: 5px 3px;
+    outline: none;
+    padding: 10px 20px;
+    color: #fafafa;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    background: #1565C0;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+/* Message */
+.message {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 7px 14px;
+    width: auto;
+    border-radius: 5px;
+    background: #1565C0;
+    z-index: 9;
+}
+
+/* Delete background */
+.deleteImg {
+    position: fixed;
+    bottom: 7%;
+    right: 10%;
+    margin: auto;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    background: #EF5350;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    display: inline-block;
+    z-index: 5;
+}
+
+.deleteImg:active {
+    opacity: 0.6;
+}
+
+/* Return to the previous page */
+.back {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 38px;
+    height: 38px;
+    padding: 7px;
+    user-select: none;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.back i {
+    color: #1565C0;
+    font-size: 52px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.back i:active {
+    background: #BDBDBD;
+    border-radius: 50%;
+    transition: background .3s;
+}
