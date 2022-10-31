@@ -42,9 +42,11 @@ Examples of use :
 
 <br>
 
-**Save the image using ID.**
+**Store image in localStorage using ID.**
 
-This method does not save the image data, but only with the input "**value**" (**ID**). So, the size usage on **localStorage** does not exceed the limit (5MB from **localStorage**). You can use as many as you like.
+This method does not store the image data, but only the input "value" (**ID**). As this also depends on the quality and resolution of the image which maybe 1MB to 2MB in size and maybe more than this, it is not possible to store many images on **localStorage**. 
+
+But, if we only store the **ID** in **localStorage**, the size used in **localStorage** is less and does not exceed the limit (5MB of **localStorage**). You can store as much as you like.
 
 Example : 
 
