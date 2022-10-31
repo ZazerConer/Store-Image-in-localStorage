@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: #ECEFF1;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0D47A1;
+    height: 5.5rem;
+    z-index: 5;
+}
+
+h1 {
+    color: #fafafa;
+    text-shadow: 0 2px #1565C0;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+/* Background cover */
+.baImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* User Avatar */
+.avImg {
+    float: right;
+    margin: 15px 25px 0 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.avImg:active {
+    background: inherit;
+    opacity: 0.5;
+}
+
+/* Go section */
+.section {
+    position: fixed;
+    top: 2.5rem;
+    left: 0;
+    z-index: 5;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+li {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+li ul li {
+    float: none;
+}
+
+li ul {
+    display: none;
+    position: absolute;
+    z-index: 5;
+}
+
+li:hover ul {
+    display: block;
+}
+
+/* Dropdown styling */
+.menu {
+    height: 30px;
+}
+
+.menu a {
+    color: #fafafa;
+    padding: 15px 20px
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.menu li {
+    background: #0D47A1;
+    border: solid 1px #ccc;
+    margin-left: -0px;
+    border-radius: px;
+    border: 0;
+}
+
+.menu li:hover {
+    background: #0072BA;
+}
+
+/* Content page */
+/* Add style to your content) */
+.contentPage {
+    width: ; /* For the better {max-width: 500/600/700 px} for smaller screens */
+    height: ; /* auto */
+    padding: ; /* Optional */
+    margin: ; /* auto */
+    display: ; /* block/inline-block */
+    background: ; /* Color */
+    z-index: 3; /* Fit in the middle (Background:0 -> ContentPage:3 <- Header:5) */
+}
+
+h2 {
+    color: #fafafa;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    width: auto;
+    border-radius: 5px;
+    background: #1565C0;
+}
+
+/* Maximum screen width */
+@media screen and (max-width: 480px) {
+    h1 {
+        text-align: left;
+        margin: 25px 0 0 20px;
+    }
+
+    .section {
+        top: 5.5rem;
+    }
+}
