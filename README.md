@@ -256,6 +256,29 @@ _Responsive device_
 <br>
 <hr>
 
+<h2 align="center">Credit to Image</h2>
+
+<br>
+
+<div align="center">
+<p><strong>Avatar</strong></p>
+<a href="https://www.flaticon.com">
+<img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/flaticon-logo_ARQYiPVjM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667248602956" width="200px" alt="zz-flaticon-logo">
+</a>
+</div>
+
+<br>
+
+<div align="center">
+<p><strong>Background</strong></p>
+<a href="https://www.freepik.com">
+<img src="https://ik.imagekit.io/zazerconer/App/save-image-in-localstorage/freepik-logo_uwt6SLcM6U.png?ik-sdk-version=javascript-1.4.3&updatedAt=1667248603341" width="200px" alt="zz-freepik-logo">
+</a>
+</div>
+
+<br><br>
+<hr>
+
 ## License : [MIT](https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/LICENSE)
 
 <br><br><br><br><br>
