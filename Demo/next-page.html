@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Next Page</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background: #ECEFF1;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0D47A1;
+    height: 5.5rem;
+    z-index: 5;
+}
+
+h1 {
+    color: #fafafa;
+    text-shadow: 0 2px #1565C0;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+/* Background cover */
+.baImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* User Avatar */
+.avImg {
+    float: right;
+    margin: 15px 25px 0 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.avImg:active {
+    background: inherit;
+    opacity: 0.5;
+}
+
+/* Go section */
+.section {
+    position: fixed;
+    top: 2.5rem;
+    left: 0;
+    z-index: 5;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+li {
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+li ul li {
+    float: none;
+}
+
+li ul {
+    display: none;
+    position: absolute;
+    z-index: 5;
+}
+
+li:hover ul {
+    display: block;
+}
+
+/* Dropdown styling */
+.menu {
+    height: 30px;
+}
+
+.menu a {
+    color: #fafafa;
+    padding: 15px 20px
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.menu li {
+    background: #0D47A1;
+    border: solid 1px #ccc;
+    margin-left: -0px;
+    border-radius: px;
+    border: 0;
+}
+
+.menu li:hover {
+    background: #0072BA;
+}
+
+/* Content page */
+.contentPage {
+    z-index: 3; /* Fit in the middle (Background:0 -> ContentPage:3 <- Header:5) */
+}
+
+h2 {
+    color: #fafafa;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    width: auto;
+    border-radius: 5px;
+    background: #1565C0;
+}
+
+/* Credits */
+.credits {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    color: #fafafa;
+    font-weight: 700;
+    padding: 7px 14px;
+    width: auto;
+    display: flex;
+    border-radius: 5px;
+    background: #1565C0;
+    z-index: 3;
+}
+
+.credits a {
+    color: #FBC02D;
+    text-decoration: none;
+}
+
+/* Maximum screen width */
+@media screen and (max-width: 480px) {
+    h1 {
+        text-align: left;
+        margin: 25px 0 0 20px;
+    }
+
+    .section {
+        top: 5.5rem;
+    }
+
+    .credits {
+        display: none;
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <header>
+        <!-- User Avatar --> 
+        <img class="avImg" id="imageAvatar" src="image/avatar/blank-avatar.png"></a> 
+
+        <!-- Title -->
+        <h1>Next Page</h1>
+    </header> 
+   
+    <!-- Section -->
+    <div class="section">
+        <ul class="menu">
+            <li><a>Change</a>
+                <ul>
+                    <li><a onclick="window.location.href='avatar.html'; return true;">Avatar</a></li>
+                    <li><a onclick="window.location.href='background.html'; return true;">Background</a></li>
+                </ul>
+            </li>
+            <li><a>Next Page</a>
+                <ul>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">Page 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div> 
+
+    <!-- Background Cover --> 
+    <img class="baImg" id="backCover" src=""> 
+
+    <!-- Content page  -->
+    <div class="contentPage">
+        <h2>YOUR CONTENT HERE</h2>
+    </div> 
+
+       <!-- Credits -->
+ <h3 class="credits">ZazerConer's&nbsp;<a href="https://github.com/ZazerConer/Store-Image-in-localStorage" target="_blank">Github</a></h3>
+
+<script>
+/*-- Get ID from localStorage and show that image */
+
+// User Avatar.
+const av1 = localStorage.getItem('av1');
+if (av1) {
+    document.getElementById("imageAvatar").src = "image/avatar/av1.png";
+    console.log("Avatar ID: av1");
+}
+const av2 = localStorage.getItem('av2');
+if (av2) {
+    document.getElementById("imageAvatar").src = "image/avatar/av2.png";
+    console.log("Avatar ID: av2");
+}
+const av3 = localStorage.getItem('av3');
+if (av3) {
+    document.getElementById("imageAvatar").src = "image/avatar/av3.png";
+    console.log("Avatar ID: av3");
+}
+const av4 = localStorage.getItem('av4');
+if (av4) {
+    document.getElementById("imageAvatar").src = "image/avatar/av4.png";
+    console.log("Avatar ID: av4");
+}
+const av5 = localStorage.getItem('av5');
+if (av5) {
+    document.getElementById("imageAvatar").src = "image/avatar/av5.png";
+    console.log("Avatar ID: av5");
+}
+const av6 = localStorage.getItem('av6');
+if (av6) {
+    document.getElementById("imageAvatar").src = "image/avatar/av6.png";
+    console.log("Avatar ID: av6");
+}
+const av7 = localStorage.getItem('av7');
+if (av7) {
+    document.getElementById("imageAvatar").src = "image/avatar/av7.png";
+    console.log("Avatar ID: av7");
+}
+const av8 = localStorage.getItem('av8');
+if (av8) {
+    document.getElementById("imageAvatar").src = "image/avatar/av8.png";
+    console.log("Avatar ID: av8");
+}
+const av9 = localStorage.getItem('av9');
+if (av9) {
+    document.getElementById("imageAvatar").src = "image/avatar/av9.png";
+    console.log("Avatar ID: av9");
+}
+const av10 = localStorage.getItem('av10');
+if (av10) {
+    document.getElementById("imageAvatar").src = "image/avatar/av10.png";
+    console.log("Avatar ID: av10");
+}
+const av11 = localStorage.getItem('av11');
+if (av11) {
+    document.getElementById("imageAvatar").src = "image/avatar/av11.png";
+    console.log("Avatar ID: av11");
+}
+const av12 = localStorage.getItem('av12');
+if (av12) {
+    document.getElementById("imageAvatar").src = "image/avatar/av12.png";
+    console.log("Avatar ID: av12");
+}
+
+/*---------------------------------------------------------------------*/
+
+// Background Cover.
+const c1 = localStorage.getItem('c1');
+if (c1) {
+    document.getElementById("backCover").src = "image/background/c1.jpg";
+    console.log("Background ID: c1");
+}
+const c2 = localStorage.getItem('c2');
+if (c2) {
+    document.getElementById("backCover").src = "image/background/c2.jpg";
+    console.log("Background ID: c2");
+}
+const c3 = localStorage.getItem('c3');
+if (c3) {
+    document.getElementById("backCover").src = "image/background/c3.jpg";
+    console.log("Background ID: c3");
+}
+const c4 = localStorage.getItem('c4');
+if (c4) {
+    document.getElementById("backCover").src = "image/background/c4.jpg";
+    console.log("Background ID: c4");
+}
+const c5 = localStorage.getItem('c5');
+if (c5) {
+    document.getElementById("backCover").src = "image/background/c5.jpg";
+    console.log("Background ID: c5");
+}
+const c6 = localStorage.getItem('c6');
+if (c6) {
+    document.getElementById("backCover").src = "image/background/c6.jpg";
+    console.log("Background ID: c6");
+}
+const c7 = localStorage.getItem('c7');
+if (c7) {
+    document.getElementById("backCover").src = "image/background/c7.jpg";
+    console.log("Background ID: c7");
+}
+const c8 = localStorage.getItem('c8');
+if (c8) {
+    document.getElementById("backCover").src = "image/background/c8.jpg";
+    console.log("Background ID: c8");
+}
+const c9 = localStorage.getItem('c9');
+if (c9) {
+    document.getElementById("backCover").src = "image/background/c9.jpg";
+    console.log("Background ID: c9");
+}
+const c10 = localStorage.getItem('c10');
+if (c10) {
+    document.getElementById("backCover").src = "image/background/c10.jpg";
+    console.log("Background ID: c10");
+}
+const c11 = localStorage.getItem('c11');
+if (c11) {
+    document.getElementById("backCover").src = "image/background/c11.jpg";
+    console.log("Background ID: c11");
+}
+const c12 = localStorage.getItem('c12');
+if (c12) {
+    document.getElementById("backCover").src = "image/background/c12.jpg";
+    console.log("Background ID: c12");
+} 
+</script>
+
+</body>
+</html>
