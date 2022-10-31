@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Demo - Background Cover</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #ECEFF1;
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    display: grid;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+/* Background cover */
+.baImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+/* Background cover selector */
+.coSelector {
+    max-width: 1024px;
+    height: auto;
+    padding: 20px 5px;
+    margin: auto;
+    display: block;
+    z-index: 1;
+}
+
+form {
+    display: inline-block;
+    padding: 7px 5px 3px 5px;
+    border-radius: 5px;
+}
+
+/* Background image */
+.cover {
+    width: 280px;
+    height: 160px;
+    margin: 5px;
+    border-radius: 10px;
+    background: slateblue;
+    -moz-box-shadow: 0 0 0 2px slateblue;
+    -webkit-box-shadow: 0 0 0 2px slateblue;
+    box-shadow: 0 0 0 2px slateblue;
+}
+
+.cover:hover {
+    opacity: 0.8;
+    border: 2px ridge slateblue;
+}
+
+.inputID {
+    display: none !important;
+}
+
+/* Save image (Background) */
+.button {
+    margin: 5px 3px;
+    outline: none;
+    padding: 10px 20px;
+    color: #fafafa;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    background: #1565C0;
+}
+
+.button:active {
+    opacity: 0.6;
+}
+
+/* Message */
+.message {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 7px 14px;
+    width: auto;
+    border-radius: 5px;
+    background: #1565C0;
+    z-index: 9;
+}
+
+/* Delete background */
+.deleteImg {
+    position: fixed;
+    bottom: 7%;
+    right: 10%;
+    margin: auto;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    align-items: center;
+    background: #EF5350;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    display: inline-block;
+    z-index: 5;
+}
+
+.deleteImg:active {
+    opacity: 0.6;
+}
+
+/* Return to the previous page */
+.back {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 38px;
+    height: 38px;
+    padding: 7px;
+    user-select: none;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.back i {
+    color: #1565C0;
+    font-size: 52px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.back i:active {
+    background: #BDBDBD;
+    border-radius: 50%;
+    transition: background .3s;
+}
+
+/* Credits */
+.credits {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    color: #fafafa;
+    font-weight: 700;
+    padding: 7px 14px;
+    width: auto;
+    border-radius: 5px;
+    background: #1565C0;
+    z-index: 3;
+}
+
+.credits a {
+    color: #FBC02D;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+    .credits {
+        display: none;
+    }
+}
+</style>
+
+</head>
+<body>
+
+    <!-- Return to the previous page -->
+    <a class="back" onclick="window.location.href='next-page.html'; return false;"><i class="material-icons" style="font-size:36px">arrow_back</i></a>
+
+    <br><br><br><br><br>
+
+    <!-- Background cover -->
+    <img class="baImg" id="backCover" src="">
+
+    <!-- Delete cover -->
+    <button class="deleteImg" id="button" onclick="deleteItem()">Delete Backgroud</button>
+
+    <!-- Display message -->
+    <div class="message" id="Message">Select background and save</div>
+
+    <!-- Background cover selector -->
+    <div class="coSelector">
+        <form method="get" onsubmit="return storeCo1(this);">
+            <img class="cover" src="image/background/c1.jpg"><br>
+            <input class="inputID" type="id" id="c1" value="c1">
+            <input class="button" type="submit" value="C1 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo2(this);">
+            <img class="cover" src="image/background/c2.jpg"><br>
+            <input class="inputID" type="id" id="c2" value="c2">
+            <input class="button" type="submit" value="C2 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo3(this);">
+            <img class="cover" src="image/background/c3.jpg"><br>
+            <input class="inputID" type="id" id="c3" value="c3">
+            <input class="button" type="submit" value="C3 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo4(this);">
+            <img class="cover" src="image/background/c4.jpg"><br>
+            <input class="inputID" type="id" id="c4" value="c4">
+            <input class="button" type="submit" value="C4 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo5(this);">
+            <img class="cover" src="image/background/c5.jpg"><br>
+            <input class="inputID" type="id" id="c5" value="c5">
+            <input class="button" type="submit" value="C5 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo6(this);">
+            <img class="cover" src="image/background/c6.jpg"><br>
+            <input class="inputID" type="id" id="c6" value="c6">
+            <input class="button" type="submit" value="C6 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo7(this);">
+            <img class="cover" src="image/background/c7.jpg"><br>
+            <input class="inputID" type="id" id="c7" value="c7">
+            <input class="button" type="submit" value="C7 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo8(this);">
+            <img class="cover" src="image/background/c8.jpg"><br>
+            <input class="inputID" type="id" id="c8" value="c8">
+            <input class="button" type="submit" value="C8 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo9(this);">
+            <img class="cover" src="image/background/c9.jpg"><br>
+            <input class="inputID" type="id" id="c9" value="c9">
+            <input class="button" type="submit" value="C9 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo10(this);">
+            <img class="cover" src="image/background/c10.jpg"><br>
+            <input class="inputID" type="id" id="c10" value="c10">
+            <input class="button" type="submit" value="C10 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo11(this);">
+            <img class="cover" src="image/background/c11.jpg"><br>
+            <input class="inputID" type="id" id="c11" value="c11">
+            <input class="button" type="submit" value="C11 save">
+        </form>
+        <!---->
+        <form method="get" onsubmit="return storeCo12(this);">
+            <img class="cover" src="image/background/c12.jpg"><br>
+            <input class="inputID" type="id" id="c12" value="c12">
+            <input class="button" type="submit" value="C12 save">
+        </form>
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- Credits -->
+<h3 class="credits">ZazerConer's <a href="https://github.com/ZazerConer/Store-Image-in-localStorage" target="_blank">Github</a></h3>
+
+<script>
+/*-- Function to store ID "value" on localStorage --*/
+
+function storeCo1(imageID) { // Value "c1".
+    var id = imageID["c1"];
+    localStorage.setItem("c1", id.value);
+    console.log("Cover 1 saved.");
+    return true;
+}
+function storeCo2(imageID) { // Value "c2".
+    var id = imageID["c2"];
+    localStorage.setItem("c2", id.value);
+    console.log("Cover 2 saved.");
+    return true;
+}
+function storeCo3(imageID) { // Value "c3".
+    var id = imageID["c3"];
+    localStorage.setItem("c3", id.value);
+    console.log("Cover 3 saved.");
+    return true;
+}
+function storeCo4(imageID) { // Value "c4".
+    var id = imageID["c4"];
+    localStorage.setItem("c4", id.value);
+    console.log("Cover 4 saved.");
+    return true;
+}
+function storeCo5(imageID) { // Value "c5".
+    var id = imageID["c5"];
+    localStorage.setItem("c5", id.value);
+    console.log("Cover 5 saved.");
+    return true;
+}
+function storeCo6(imageID) { // Value "c6'.
+    var id = imageID["c6"];
+    localStorage.setItem("c6", id.value);
+    console.log("Cover 6 saved.");
+    return true;
+}
+function storeCo7(imageID) { // Value "c7".
+    var id = imageID["c7"];
+    localStorage.setItem("c7", id.value);
+    console.log("Cover 7 saved.");
+    return true;
+}
+function storeCo8(imageID) { // Value "c8".
+    var id = imageID["c8"];
+    localStorage.setItem("c8", id.value);
+    console.log("Cover 8 saved.");
+    return true;
+}
+function storeCo9(imageID) { // Value "c9".
+    var id = imageID["c9"];
+    localStorage.setItem("c9", id.value);
+    console.log("Cover 9 saved.");
+    return true;
+}
+function storeCo10(imageID) { // Value "c10".
+    var id = imageID["c10"];
+    localStorage.setItem("c10", id.value);
+    console.log("Cover 10 saved.");
+    return true;
+}
+function storeCo11(imageID) { // Value "c11".
+    var id = imageID["c11"];
+    localStorage.setItem("c11", id.value);
+    console.log("Cover 11 saved.");
+    return true;
+}
+function storeCo12(imageID) { // Value "c12".
+    var id = imageID["c12"];
+    localStorage.setItem("c12", id.value);
+    console.log("Cover 12 saved.");
+    return true;
+}
+
+/*-- Get ID from localStorage and show that image (Background) --*/
+
+const c1 = localStorage.getItem('c1');
+if (c1) {
+    document.getElementById("backCover").src = "image/background/c1.jpg";
+    document.getElementById("Message").innerHTML = "Background C1";
+    console.log("Background ID: c1");
+}
+const c2 = localStorage.getItem('c2');
+if (c2) {
+    document.getElementById("backCover").src = "image/background/c2.jpg";
+    document.getElementById("Message").innerHTML = "Background C2";
+    console.log("Background ID: c2");
+}
+const c3 = localStorage.getItem('c3');
+if (c3) {
+    document.getElementById("backCover").src = "image/background/c3.jpg";
+    document.getElementById("Message").innerHTML = "Background C3";
+    console.log("Background ID: c3");
+}
+const c4 = localStorage.getItem('c4');
+if (c4) {
+    document.getElementById("backCover").src = "image/background/c4.jpg";
+    document.getElementById("Message").innerHTML = "Background C4";
+    console.log("Background ID: c4");
+}
+const c5 = localStorage.getItem('c5');
+if (c5) {
+    document.getElementById("backCover").src = "image/background/c5.jpg";
+    document.getElementById("Message").innerHTML = "Background C5";
+    console.log("Background ID: c5");
+}
+const c6 = localStorage.getItem('c6');
+if (c6) {
+    document.getElementById("backCover").src = "image/background/c6.jpg";
+    document.getElementById("Message").innerHTML = "Background C6";
+    console.log("Background ID: c6");
+}
+const c7 = localStorage.getItem('c7');
+if (c7) {
+    document.getElementById("backCover").src = "image/background/c7.jpg";
+    document.getElementById("Message").innerHTML = "Background C7";
+    console.log("Background ID: c7");
+}
+const c8 = localStorage.getItem('c8');
+if (c8) {
+    document.getElementById("backCover").src = "image/background/c8.jpg";
+    document.getElementById("Message").innerHTML = "Background C8";
+    console.log("Background ID: c8");
+}
+const c9 = localStorage.getItem('c9');
+if (c9) {
+    document.getElementById("backCover").src = "image/background/c9.jpg";
+    document.getElementById("Message").innerHTML = "Background C9";
+    console.log("Background ID: c9");
+}
+const c10 = localStorage.getItem('c10');
+if (c10) {
+    document.getElementById("backCover").src = "image/background/c10.jpg";
+    document.getElementById("Message").innerHTML = "Background C10";
+    console.log("Background ID: c10");
+}
+const c11 = localStorage.getItem('c11');
+if (c11) {
+    document.getElementById("backCover").src = "image/background/c11.jpg";
+    document.getElementById("Message").innerHTML = "Background C11";
+    console.log("Background ID: c11");
+}
+const c12 = localStorage.getItem('c12');
+if (c12) {
+    document.getElementById("backCover").src = "image/background/c12.jpg";
+    document.getElementById("Message").innerHTML = "Background C12";
+    console.log("Background ID: c12");
+}
+
+/*-- Remove ID from localStorage + Refresh button --*/
+
+function deleteItem() {
+    localStorage.removeItem("c1");
+    localStorage.removeItem('c2');
+    localStorage.removeItem('c3');
+    localStorage.removeItem('c4');
+    localStorage.removeItem('c5');
+    localStorage.removeItem('c6');
+    localStorage.removeItem('c7');
+    localStorage.removeItem('c8');
+    localStorage.removeItem('c9');
+    localStorage.removeItem('c10');
+    localStorage.removeItem('c11');
+    localStorage.removeItem('c12');
+    console.log("Background has been removed.");
+}
+
+/*-- Refresh button --*/
+
+$(document).ready(function() {
+    $("button").click(function() {
+        window.location = window.location.pathname;
+    });
+}); 
+</script>
+
+</body>
+</html>
