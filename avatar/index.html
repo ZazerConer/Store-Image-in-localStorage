@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>User Avatar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Return to the previous page -->
+    <!-- e.g (href='../home/index.html') -->
+    <a class="back" onclick="window.location.href='../next-page/index.html'; return false;"><i class="material-icons" style="font-size:36px">arrow_back</i></a>
+
+    <br><br><br><br>
+
+    <div>
+        <!-- Display Avatar -->
+        <div class="backImg"><img class="avImg" id="imageAvatar" src="image/blank-avatar.png"></div>
+
+        <br><br>
+
+        <!-- Display message -->
+        <div id="Message" style="color:#0D47A1;font-size:20px;font-weight:700;text-shadow:0 2px #fff;">Select your Avatar and Save</div>
+
+        <br><br>
+
+        <!-- Delete Avatar -->
+        <button class="deleteImg" id="button" onclick="deleteItem()">Delete Avatar</button>
+
+        <br><br>
+
+        <!-- Display message 2 -->
+        <div id="Message2" style="color:#0D47A1;font-size:16px;font-weight:500;text-shadow:0 1px #fff;"></div>
+
+        <br>
+
+        <!-- Avatar selector -->
+        <div class="avSelector">
+            <!-- Male avatar -->
+            <form method="get" onsubmit="return storeAv1(this);">
+                <img class="avatar" src="image/av1.png"><br>
+                <input class="inputID" type="id" id="av1" value="av1">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv2(this);">
+                <img class="avatar" src="image/av2.png"><br>
+                <input class="inputID" type="id" id="av2" value="av2">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv3(this);">
+                <img class="avatar" src="image/av3.png"><br>
+                <input class="inputID" type="id" id="av3" value="av3">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv4(this);">
+                <img class="avatar" src="image/av4.png"><br>
+                <input class="inputID" type="id" id="av4" value="av4">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv5(this);">
+                <img class="avatar" src="image/av5.png"><br>
+                <input class="inputID" type="id" id="av5" value="av5">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv6(this);">
+                <img class="avatar" src="image/av6.png"><br>
+                <input class="inputID" type="id" id="av6" value="av6">
+                <input class="button" type="submit" value="Save">
+            </form>
+
+            <!-- Female avatar-->
+            <form method="get" onsubmit="return storeAv7(this);">
+                <img class="avatar" src="image/av7.png"><br>
+                <input class="inputID" type="id" id="av7" value="av7">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv8(this);">
+                <img class="avatar" src="image/av8.png"><br>
+                <input class="inputID" type="id" id="av8" value="av8">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv9(this);">
+                <img class="avatar" src="image/av9.png"><br>
+                <input class="inputID" type="id" id="av9" value="av9">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv10(this);">
+                <img class="avatar" src="image/av10.png"><br>
+                <input class="inputID" type="id" id="av10" value="av10">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv11(this);">
+                <img class="avatar" src="image/av11.png"><br>
+                <input class="inputID" type="id" id="av11" value="av11">
+                <input class="button" type="submit" value="Save">
+            </form>
+            <!---->
+            <form method="get" onsubmit="return storeAv12(this);">
+                <img class="avatar" src="image/av12.png"><br>
+                <input class="inputID" type="id" id="av12" value="av12">
+                <input class="button" type="submit" value="Save">
+            </form>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
