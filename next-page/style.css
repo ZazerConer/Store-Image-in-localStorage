@@ -68,34 +68,28 @@ h1 {
     left: 0;
     z-index: 5;
 }
-
 ul {
     padding: 0;
     margin: 0;
     z-index: 5;
 }
-
 a {
     display: block;
     text-decoration: none;
 }
-
 li {
     display: block;
     float: left;
     text-align: left;
 }
-
 li ul li {
     float: none;
 }
-
 li ul {
     display: none;
     position: absolute;
     z-index: 5;
 }
-
 li:hover ul {
     display: block;
 }
@@ -104,16 +98,13 @@ li:hover ul {
 .menu {
     height: 30px;
 }
-
 .menu a {
     color: #fafafa;
     padding: 15px 20px
 }
-
 .menu a:hover {
     color: #fff;
 }
-
 .menu li {
     background: #0D47A1;
     border: solid 1px #ccc;
@@ -121,13 +112,12 @@ li:hover ul {
     border-radius: px;
     border: 0;
 }
-
 .menu li:hover {
     background: #0072BA;
 }
 
 /* Content page */
-/* Add style to your content) */
+/* Add style to your content */
 .contentPage {
     width: ; /* For the better {max-width: 500/600/700 px} for smaller screens */
     height: ; /* auto */
@@ -137,7 +127,6 @@ li:hover ul {
     background: ; /* Color */
     z-index: 3; /* Fit in the middle (Background:0 -> ContentPage:3 <- Header:5) */
 }
-
 h2 {
     color: #fafafa;
     font-weight: bold;
