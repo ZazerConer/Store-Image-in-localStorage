@@ -108,7 +108,7 @@ const img1 = localStorage.getItem('img1');
 <br><br>
 
 <div align="center">
-<a href="">
+<a href="https://zazerconer.github.io/Store-Image-in-localStorage/Demo/next-page.html">
 <img width="80px" height="35px" src="https://img.shields.io/badge/DEMO-slateblue"></a>
 </div>
 
@@ -147,20 +147,20 @@ _Responsive device_
 <br>
 
 <div align="center">
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/avatar/index.html">
 <img width="55px" height="30px" src="https://img.shields.io/badge/HTML-orangered"></a>
 &nbsp;
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/avatar/style.css">
 <img width="55px" height="30px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
 &nbsp;
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/avatar/script.js">
 <img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
 &nbsp;
-<a href="">
-<img width="55px" height="30px" src="https://img.shields.io/badge/Image-blueviolet"></a>
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/tree/main/avatar/image">
+<img width="60px" height="30px" src="https://img.shields.io/badge/Image-blueviolet"></a>
 </div>
 
-<br>
+<br><br>
 <hr>
 
 <h1 align="center">Background Cover</h1>
@@ -192,20 +192,20 @@ _Responsive device_
 <br>
 
 <div align="center">
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/background/index.html">
 <img width="55px" height="30px" src="https://img.shields.io/badge/HTML-orangered"></a>
 &nbsp;
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/background/style.css">
 <img width="55px" height="30px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
 &nbsp;
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/background/script.js">
 <img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
 &nbsp;
-<a href="">
-<img width="55px" height="30px" src="https://img.shields.io/badge/Image-blueviolet"></a>
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/tree/main/background/image">
+<img width="60px" height="30px" src="https://img.shields.io/badge/Image-blueviolet"></a>
 </div>
 
-<br>
+<br><br>
 <hr>
 
 <h1 align="center">Next Page</h1>
@@ -237,17 +237,17 @@ _Responsive device_
 <br>
 
 <div align="center">
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/next-page/index.html">
 <img width="55px" height="30px" src="https://img.shields.io/badge/HTML-orangered"></a>
 &nbsp;
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/next-page/style.css">
 <img width="55px" height="30px" src="https://img.shields.io/badge/CSS-dodgerblue"></a>
 &nbsp;
-<a href="">
+<a href="https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/next-page/script.js">
 <img width="78px" height="30px" src="https://img.shields.io/badge/JavaScript-gold"></a>
 </div>
 
-<br>
+<br><br>
 <hr>
 <br>
 
@@ -279,7 +279,7 @@ _Responsive device_
 <br><br>
 <hr>
 
-## License : [MIT](https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/LICENSE)
+### License : [MIT](https://github.com/ZazerConer/Store-Image-in-localStorage/blob/main/LICENSE)
 
 <br><br><br><br><br>
 
